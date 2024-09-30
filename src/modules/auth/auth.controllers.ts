@@ -33,6 +33,7 @@ const createUser = asyncHandler(async (req, res) => {
         }
 
         // Create a new product instance
+        // add
         const user = new UserModel({ ...userPayload });
 
         // Save the product using the session
