@@ -1,5 +1,5 @@
 import mongoose, { Schema } from 'mongoose';
-import { TOrder, TShoppingCart, TShoppingInfo } from './Order.interface';
+import { TOrder, TShoppingCart, TShoppingInfo } from './order.interface';
 
 
 const ShoppingCartSchema = new Schema<TShoppingCart>({
