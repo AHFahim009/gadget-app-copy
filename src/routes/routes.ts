@@ -18,11 +18,10 @@ const moduleRoutes = [
         path: "/orders",
         element: OrderRoutes,
     },
-    // added
-    // Add more routes here...
+
 ];
 
-
+// fixed
 moduleRoutes.forEach((route) => {
     router.use(route.path, route.element);
 });
