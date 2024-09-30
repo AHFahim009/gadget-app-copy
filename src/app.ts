@@ -2,9 +2,7 @@ import express, { Request, Response } from "express";
 import globalError from "./middlewares/globalError";
 import cors from "cors"
 import { config } from "./config";
-import cookieParser from "cookie-parser";
 import { routes } from "./routes";
-import { OrderRoutes } from "./modules/order/order.route";
 
 const app = express();
 
@@ -13,10 +11,9 @@ const corsOptions = {
     credentials: true,
 };
 app.use(express.json());
-app.use(cookieParser())
+// app.use(cookieParser())
 app.use(cors(corsOptions));
 app.use("/api", routes)
-app.use("/api/orders", OrderRoutes)
 
 // app.post("/api/testing", async (req: Request, res: Response) => {
 //     const payload = req.body
