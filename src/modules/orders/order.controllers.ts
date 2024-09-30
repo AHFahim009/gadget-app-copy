@@ -3,7 +3,7 @@ import asyncHandler from "../../helpers/asyncHandeler";
 import sendResponse from "../../helpers/responseHandler";
 import QueryHandler from "../../queryBuilder/QueryHandler";
 import { TOrder } from "./order.interface";
-import OrderModel from "./order.Model";
+import OrderModel from "./order.model";
 
 
 
@@ -51,7 +51,7 @@ const getMyOrder = asyncHandler(async (req, res) => {
 
 
 
-export const OrderControlles = {
+export const OrderControllers = {
     createUser,
     getMyOrder
 }

@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { ProductRoutes } from "../modules/Prouducts/product.routes";
 import { AuthRoutes } from "../modules/auth/auth.routes";
-import { MyOrderRoutes } from "../modules/order/myOrderRoutes";
+import { OrderRoutes } from "../modules/orders/order.routes";
 // import { OrderRoutes } from "../modules/order/order.routes";
 // commit
 
@@ -17,7 +17,7 @@ const moduleRoutes = [
     },
     {
         path: "/orders",
-        element: MyOrderRoutes,
+        element: OrderRoutes,
     },
 
 

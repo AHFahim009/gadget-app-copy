@@ -2,6 +2,7 @@ import mongoose, { Schema } from 'mongoose';
 import { TOrder, TShoppingCart, TShoppingInfo } from './order.interface';
 
 
+
 const ShoppingCartSchema = new Schema<TShoppingCart>({
     _id: { type: String, required: true },
     name: { type: String, required: true },
