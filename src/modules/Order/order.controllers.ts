@@ -31,7 +31,6 @@ const getMyOrder = asyncHandler(async (req, res) => {
     const query = req.query
     query.userId = userId
     const queryHandler = new QueryHandler<TOrder>(query, OrderModel)
-    console.log(query);
 
     const result = await queryHandler.paginate().execute()
     const metaData = await queryHandler.getPaginationResult()
